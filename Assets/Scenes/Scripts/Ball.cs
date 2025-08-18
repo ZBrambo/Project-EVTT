@@ -47,6 +47,10 @@ public class Ball : MonoBehaviour
         if (paddle)
         {
             rb2d.linearVelocity *= speedIncreaseFactor;
+            //Slightly modify the ball's direction based on where it hit the paddle
+            float y = (transform.position.y - paddle.transform.position.y) / paddle.transform.localScale.y;
+            Vector2 dir = new Vector2(rb2d.linearVelocity.x > 0 ? 1 : -1, y).normalized;
+            rb2d.linearVelocity = dir * Mathf.Clamp(rb2d.linearVelocity.magnitude, minSpeed, maxSpeed);
         }
     }
 

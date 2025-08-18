@@ -1083,13 +1083,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1227576077}
   rb2d: {fileID: 1140407765}
-  maxInitialAngle: 0.67
-  moveSpeed: 8
+  maxInitialAngle: 0
+  moveSpeed: 7
   maxSpeed: 20
   minSpeed: 1
   startX: 0
   startY: 0
-  speedIncreaseFactor: 1.1
+  speedIncreaseFactor: 1.08
 --- !u!1 &1227576075
 GameObject:
   m_ObjectHideFlags: 0
